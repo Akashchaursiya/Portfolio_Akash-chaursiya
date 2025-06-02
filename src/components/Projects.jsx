@@ -28,6 +28,13 @@ const projects = [
         link: 'https://packagejson.net/',
         github: 'https://github.com/Akashchaursiya/package-json-reader',
     },
+    {
+         title: 'Healthcare Dashboard',
+        description: 'A responsive healthcare admin dashboard built using React and Tailwind CSS.',
+        github: 'https://github.com/Akashchaursiya/healthcare-dashboard',
+        link: 'https://healthcare-dashboard-one-kappa.vercel.app/'
+
+    }
 ];
 
 function Projects() {
@@ -39,7 +46,7 @@ function Projects() {
                     <div key={index} className="border p-3 rounded-md shadow-md">
                         <h3 className="text-lg font-semibold">{project.title}</h3>
                         <p className="mt-1 text-sm">{project.description}</p>
-                        {project.title === 'Package JSON Reader' ? (
+                        {(project.title === 'Package JSON Reader' || project.title === 'Healthcare Dashboard' ) ? (
                             <a
                                 href={project.link}
                                 target="_blank"
@@ -48,6 +55,7 @@ function Projects() {
                             >
                                 View Project
                             </a>
+                            
                         ) : (
                             <>
                                 <a

@@ -11,14 +11,16 @@ function Home() {
                     </h2>
                     <a
                         className="inline-flex items-center px-6 py-3 font-medium bg-transparent border border-[#C0A062] text-[#C0A062] ml-4 rounded-lg transition duration-200 hover:bg-[#C0A062] hover:text-white hover:border-[#C0A062]"
-                        href="https://drive.google.com/file/d/1SAiiXtvmzsdFqkVS1QwGXjjZRZM9T3C1/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1wb0vV5tSesE7zI_sftLAluo_8JwqC-8q/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
+                        
                         &nbsp; Download Resume
                     </a>
                 </div>
             </div>
+            
 
             <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full">
                 <img className="w-96 object-cover m-12 sm:m-14" src="/assets/bg1.png" alt="background" />
