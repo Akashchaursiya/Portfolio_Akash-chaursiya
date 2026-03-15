@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaCode } from "react-icons/fa";
 import { Link } from "react-scroll";
+
 
 function Navbar({ toggleDarkMode, isDarkMode }) {
   const [menu, setMenu] = useState(false);
@@ -23,13 +25,9 @@ function Navbar({ toggleDarkMode, isDarkMode }) {
       className="max-w-screen-2xl container mx-auto p-0 px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 "
     >
       <div className="flex justify-between items-center h-16">
-        <div className=" flex space-x-2">
-          <img
-            src="/assets/pp.png"
-            className="h-12 w-12 rounded-full"
-            alt="logo"
-          />
-          <h1 className="font-semibold text-2xl cursor-pointer">Akash</h1>
+        <div className="flex items-center gap-2">
+  <FaCode className="text-blue-600 text-2xl" />
+           <h1 className="font-semibold text-1xl cursor-pointer">Akash.dev</h1>
         </div>
         <div className="flex items-center">
           <ul className="hidden md:flex space-x-8">

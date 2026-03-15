@@ -1,88 +1,99 @@
 import React from 'react';
 
 const projects = [
-    {
-        title: 'E-commerce Product Page',
-        description: 'A dynamic e-commerce product page built with React and Tailwind CSS.',
-        link: 'https://github.com/Akashchaursiya/E-commerce-Product-page.git',
-        github: 'https://github.com/Akashchaursiya/Ecommerce-productpage',
-        linkedin: 'https://www.linkedin.com/posts/akashchaursiya_reactjs-webdevelopment-tailwindcss-activity-7243666395534692353-BF0o?utm_source=share&utm_medium=member_android'
-    },
-    {
-        title: 'Weather Dashboard',
-        description: 'A simple weather dashboard that fetches data from a weather API.',
-        link: '#',
-        github: 'https://github.com/Akashchaursiya/Weather-Dashboard.git',
-        linkedin: 'https://www.linkedin.com/posts/akashchaursiya_reactjs-webdevelopment-tailwindcss-activity-7239763713828794368-o4IL?utm_source=share&utm_medium=member_desktop'
-    },
-    {
-        title: 'E-commerce Landing Page',
-        description: 'A dynamic e-commerce landing page built with React and Tailwind CSS.',
-        link: 'https://github.com/Akashchaursiya/E-commerce-Product-page.git',
-        github: 'https://github.com/Akashchaursiya/E-commerce-Landing-page',
-        linkedin: 'https://www.linkedin.com/posts/akashchaursiya_e-commerce-landing-page-website-in-react-activity-7236747574865539073-rpEu?utm_source=share&utm_medium=member_desktop'
-    },
-    {
-        title: 'Package JSON Reader',
-        description: 'An online tool for reading and managing package JSON details.',
-        link: 'https://packagejson.net/',
-        github: 'https://github.com/Akashchaursiya/package-json-reader',
-    },
-    {
-         title: 'Healthcare Dashboard',
-        description: 'A responsive healthcare admin dashboard built using React and Tailwind CSS.',
-        github: 'https://github.com/Akashchaursiya/healthcare-dashboard',
-        link: 'https://healthcare-dashboard-one-kappa.vercel.app/'
-
-    }
+  {
+    title: "E-commerce Product Page",
+    description: "Dynamic product page with cart and variants.",
+    tech: "React • Tailwind",
+    image: "/assets/projects/ecommerce.png",
+    github: "https://github.com/Akashchaursiya/Ecommerce-productpage",
+    demo: "https://example.com"
+  },
+  {
+    title: "Weather Dashboard",
+    description: "Weather app using API to fetch live data.",
+    tech: "React • API • Tailwind",
+    image: "/assets/projects/weather.png",
+    github: "https://github.com/Akashchaursiya/Weather-Dashboard",
+    demo: "#"
+  },
+  {
+    title: "Healthcare Dashboard",
+    description: "Admin dashboard UI for healthcare analytics.",
+    tech: "React • Tailwind",
+    image: "/assets/projects/dashboard.png",
+    github: "https://github.com/Akashchaursiya/healthcare-dashboard",
+    demo: "https://healthcare-dashboard-one-kappa.vercel.app/"
+  }
 ];
 
 function Projects() {
     return (
-        <div className="max-w-screen-xl mx-auto p-5">
-            <h2 className="text-3xl font-bold text-center mb-4">My Projects</h2>
-            <div className="grid grid-cols-1 p-4 sm:grid-cols-2 md:grid-cols-2 gap-4">
-                {projects.map((project, index) => (
-                    <div key={index} className="border p-3 rounded-md shadow-md">
-                        <h3 className="text-lg font-semibold">{project.title}</h3>
-                        <p className="mt-1 text-sm">{project.description}</p>
-                        {(project.title === 'Package JSON Reader' || project.title === 'Healthcare Dashboard' ) ? (
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block mt-3 px-3 py-1 bg-orange-700 text-white text-sm rounded-md hover:bg-orange-600"
-                            >
-                                View Project
-                            </a>
-                            
-                        ) : (
-                            <>
-                                <a
-                                    href={project.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-block mt-3 px-3 py-1 bg-gray-600 text-white text-sm rounded-md hover:bg-gray-500"
-                                >
-                                    View Code
-                                </a>
-                                {project.linkedin && (
-                                    <a
-                                        href={project.linkedin}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-block mt-3 ml-2 px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-500"
-                                    >
-                                        Watch Demo Video
-                                    </a>
-                                )}
-                            </>
-                        )}
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-}
+    <section id="projects" className="max-w-7xl mx-auto px-6 py-8">
 
+      <h2 className="text-4xl font-bold text-center mb-10">
+        My Projects
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl text-gray-700 shadow-md overflow-hidden hover:shadow-xl transition"
+          >
+
+         
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 overflow-hidden rounded-t-xl object-cover"
+            />
+
+    
+            <div className="p-5">
+
+              <h3 className="text-xl font-semibold">
+                {project.title}
+              </h3>
+
+              <p className="text-gray-600 mt-2 text-sm">
+                {project.description}
+              </p>
+
+           
+              <p className="text-blue-600 text-sm mt-2">
+                {project.tech}
+              </p>
+
+              <div className="flex gap-3 mt-4">
+
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-sm bg-gray-800 text-white rounded-lg hover:bg-gray-700"
+                >
+                  GitHub
+                </a>
+
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-sm border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white"
+                >
+                  Live Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        ))}
+
+      </div>
+    </section>
+  );
+}
 export default Projects;

@@ -1,33 +1,58 @@
-import React from 'react';
+import React from "react";
 
 function Home() {
-    return (
-        <aside className="relative overflow-hidden  rounded-lg sm:mx-16 mx-2 sm:py-8">
-            <div className="relative z-10 max-w-screen-xl pt-10 sm:py-24 mx-auto sm:px-6">
-                <div className="max-w-xl sm:mt-1 mt-20 space-y-8 text-center sm:text-right sm:ml-auto pt-48 sm:pt-0">
-                    <h2 className="text-6xl pt-5 font-bold sm:text-7xl">
-                        Akash Chaursiya 
-                        <span className="hidden sm:block p-2 text-4xl sm:text-4xl">Frontend Developer (Fresher)</span>
-                    </h2>
-                    <a
-                        className="inline-flex items-center px-6 py-3 font-medium bg-transparent border border-[#C0A062] text-[#C0A062] ml-4 rounded-lg transition duration-200 hover:bg-[#C0A062] hover:text-white hover:border-[#C0A062]"
-                        href="https://drive.google.com/file/d/1ZZ1OO3RYK-Rv6LeVxRZlgHqsFNxY2NBj/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
 
-                        
-                        &nbsp; Download Resume
-                    </a>
-                </div>
-            </div>
-            
+  const scrollToProjects = () => {
+    const section = document.getElementById("projects");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
 
-            <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full">
-                <img className="w-96 object-cover m-12 sm:m-14" src="/assets/bg1.png" alt="background" />
-            </div>
-        </aside>
-    );
+  return (
+    <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between">
+
+      <div className="max-w-xl text-center md:text-left">
+
+        <h1 className="text-4xl md:text-5xl font-bold">
+          Hi, I'm <span className="text-blue-600">Akash Chaursiya</span>
+        </h1>
+
+        <p className="mt-4 text-gray-200">
+          Frontend Developer | React Developer | WordPress Developer
+        </p>
+
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
+        
+          <a
+            href="https://drive.google.com/file/d/1ZZ1OO3RYK-Rv6LeVxRZlgHqsFNxY2NBj/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+          >
+            Download Resume
+          </a>
+
+          <button
+            onClick={scrollToProjects}
+            className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition"
+          >
+            View Projects
+          </button>
+
+        </div>
+      </div>
+
+    
+      <div className="hidden md:block">
+        <img
+          src="/assets/bg1.png"
+          alt="developer"
+          className="w-43 h-auto object-cover "
+        />
+      </div>
+
+    </section>
+  );
 }
 
 export default Home;
