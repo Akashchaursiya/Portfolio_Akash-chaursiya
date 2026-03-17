@@ -45,6 +45,7 @@ function Contact() {
       });
   };
 
+
   return (
     <section id="contact" className="max-w-7xl mx-auto px-6 py-16">
 
@@ -104,7 +105,7 @@ function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-3 border rounded-md"
+            className="w-full p-3 text-black border rounded-md"
           />
 
           <input
@@ -114,7 +115,7 @@ function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-3 border rounded-md"
+            className="w-full p-3  text-black border rounded-md"
           />
 
           <textarea
@@ -124,7 +125,7 @@ function Contact() {
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full p-3 border rounded-md"
+            className="w-full p-3  text-black border rounded-md"
           />
 
           <button

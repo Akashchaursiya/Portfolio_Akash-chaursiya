@@ -34,3 +34,16 @@ https://portfolio-akash-chaursiya.vercel.app/
 ---
 
 ## 📂 Project Structure
+Components 
+- Navbar.jsx
+- About.jsx
+- Contact.jsx
+- Footer.jsx
+- Home.jsx
+- Projects.jsx
+- Skills.jsx
+
+## Public 
+ Assets
+ - Project img.
+ 
