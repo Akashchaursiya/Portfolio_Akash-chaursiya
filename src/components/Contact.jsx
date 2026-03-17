@@ -28,7 +28,7 @@ function Contact() {
         "template_j9m9fv2",
         formData,
         "CPITvH5AdfwKYg6C9"
-      )
+      ) 
       .then(() => {
         alert(`Thank you for reaching out, ${formData.name}!`);
         setFormData({
