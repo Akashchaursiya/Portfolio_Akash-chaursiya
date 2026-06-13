@@ -24,7 +24,7 @@ function Contact() {
 
     emailjs
       .send(
-        "service_egi2l2s",
+        "service_vdcjr7o",
         "template_j9m9fv2",
         formData,
         "CPITvH5AdfwKYg6C9",
