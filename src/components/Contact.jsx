@@ -7,7 +7,7 @@ function Contact() {
     name: "",
     email: "",
     message: ""
-  });
+  }); 
 
   const [loading, setLoading] = useState(false);
 
