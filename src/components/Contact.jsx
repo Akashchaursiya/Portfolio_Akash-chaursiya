@@ -25,9 +25,9 @@ function Contact() {
     emailjs
       .send(
         "service_6eerrvh",
-        "template_j9m9fv2",
+        "template_gozzoih",
         formData,
-        "CPITvH5AdfwKYg6C9",
+        "9QufNAR9ydKF8FWKj",
       )
       .then(() => {
         alert(`Thank you for reaching out, ${formData.name}!`);
