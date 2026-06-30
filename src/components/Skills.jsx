@@ -6,19 +6,20 @@ import {
   FaJs,
   FaGithub,
   FaWordpressSimple,
-  FaPencilRuler
+  //FaPencilRuler,
+  FaShopify
 } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 
 const skills = [
-  { name: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
-  { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: "HTML5", icon: <FaHtml5 className="text-orange-600" /> },
+  { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
   { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
   { name: "React", icon: <FaReact className="text-blue-600" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500" /> },
   { name: "GitHub", icon: <FaGithub className="text-gray-800" /> },
   { name: "WordPress", icon: <FaWordpressSimple className="text-blue-700" /> },
-  { name: "UI/UX Design", icon: <FaPencilRuler className="text-purple-500" /> }
+  { name: "Shopify", icon: <FaShopify className="text-purple-500" /> }
 ];
 
 function Skills() {
