@@ -25,9 +25,7 @@ function About() {
 
           <p className="mb-4">
             Hi, I'm <strong>Akash Chaursiya</strong>, a passionate
-            <strong className="text-blue-600"> Frontend Developer</strong> focused on building
-            responsive and user-friendly web applications.
-          </p>
+            <strong className="text-blue-600"> Frontend Developer </strong>with <strong>1 year and 8 months of professional experience</strong> building responsive, user-friendly web applications.</p>
 
           <p className="mb-4">
             I work with modern technologies like
